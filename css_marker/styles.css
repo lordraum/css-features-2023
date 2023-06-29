@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(32, 32, 34);
+    color: azure;
+}
+
+li {
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+/* marker:: Establece estilos a las viñetas de las listas */
+
+/* global */
+::marker {
+    color: steelblue;
+    /* Están disponibles todas las propiedades de las fuentes */
+    font-size: 1em;
+    /* al ser un pseudoelemento está disponible la propiedad content */
+    transition: color .3s;
+    content: '🕞';
+}
+
+/* hover */
+
+li:hover::marker {
+    color: rgb(90, 52, 76);
+}
+
